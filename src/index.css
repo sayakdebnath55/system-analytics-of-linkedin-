@@ -1,0 +1,202 @@
+/* Tailwind CSS base directives — these inject Tailwind's utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom smooth scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #0f172a;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 999px;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #475569 #0f172a;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* ============================================================================
+   LIGHT MODE THEME OVERRIDES (.light-mode)
+   ============================================================================ */
+.light-mode {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.light-mode .bg-slate-950,
+.light-mode .bg-slate-950\/90,
+.light-mode .bg-slate-950\/85,
+.light-mode .bg-slate-950\/80,
+.light-mode .bg-slate-950\/70,
+.light-mode .bg-slate-950\/60 {
+  background-color: #f1f5f9 !important;
+}
+
+.light-mode header.bg-slate-900\/95,
+.light-mode .bg-slate-900,
+.light-mode .bg-slate-900\/95,
+.light-mode .bg-slate-900\/90,
+.light-mode .bg-slate-900\/80,
+.light-mode .bg-slate-900\/70 {
+  background-color: #ffffff !important;
+}
+
+.light-mode .from-slate-900 {
+  --tw-gradient-from: #ffffff var(--tw-gradient-from-position) !important;
+}
+.light-mode .via-slate-900 {
+  --tw-gradient-stops: var(--tw-gradient-from), #f8fafc var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+.light-mode .to-indigo-950\/30 {
+  --tw-gradient-to: #eef2ff var(--tw-gradient-to-position) !important;
+}
+.light-mode .to-emerald-950\/30 {
+  --tw-gradient-to: #ecfdf5 var(--tw-gradient-to-position) !important;
+}
+
+.light-mode .bg-slate-800,
+.light-mode .bg-slate-800\/90,
+.light-mode .bg-slate-800\/80,
+.light-mode .bg-slate-800\/60,
+.light-mode .bg-slate-800\/40 {
+  background-color: #e2e8f0 !important;
+}
+
+.light-mode .text-white,
+.light-mode .text-slate-100,
+.light-mode .text-slate-200 {
+  color: #0f172a !important;
+}
+
+/* Keep white text inside vibrant colored buttons, avatars, and certificate graphic */
+.light-mode .keep-white-text,
+.light-mode .keep-white-text *,
+.light-mode button.bg-indigo-600,
+.light-mode button.bg-emerald-600,
+.light-mode button.bg-rose-600,
+.light-mode button.from-indigo-600,
+.light-mode button.from-emerald-600 {
+  color: #ffffff !important;
+}
+
+.light-mode .text-slate-300 {
+  color: #334155 !important;
+}
+
+.light-mode .text-slate-400,
+.light-mode .text-slate-500 {
+  color: #475569 !important;
+}
+
+.light-mode .border-slate-800,
+.light-mode .border-slate-800\/90,
+.light-mode .border-slate-800\/80,
+.light-mode .border-slate-700,
+.light-mode .border-slate-700\/90,
+.light-mode .border-slate-700\/80,
+.light-mode .border-slate-700\/70 {
+  border-color: #cbd5e1 !important;
+}
+
+.light-mode .bg-indigo-950,
+.light-mode .bg-indigo-950\/90,
+.light-mode .bg-indigo-950\/80,
+.light-mode .bg-indigo-950\/70,
+.light-mode .bg-indigo-950\/60,
+.light-mode .bg-indigo-950\/40 {
+  background-color: #e0e7ff !important;
+}
+.light-mode .text-indigo-300,
+.light-mode .text-indigo-200,
+.light-mode .text-indigo-400 {
+  color: #3730a3 !important;
+}
+
+.light-mode .bg-emerald-950,
+.light-mode .bg-emerald-950\/90,
+.light-mode .bg-emerald-950\/80,
+.light-mode .bg-emerald-950\/70,
+.light-mode .bg-emerald-950\/60,
+.light-mode .bg-emerald-950\/50,
+.light-mode .bg-emerald-950\/30,
+.light-mode .bg-emerald-950\/20 {
+  background-color: #d1fae5 !important;
+}
+.light-mode .text-emerald-300,
+.light-mode .text-emerald-200,
+.light-mode .text-emerald-400 {
+  color: #065f46 !important;
+}
+
+.light-mode .bg-rose-950,
+.light-mode .bg-rose-950\/90,
+.light-mode .bg-rose-950\/80,
+.light-mode .bg-rose-950\/70,
+.light-mode .bg-rose-950\/60,
+.light-mode .bg-rose-950\/50,
+.light-mode .bg-rose-950\/30,
+.light-mode .bg-rose-950\/20 {
+  background-color: #ffe4e6 !important;
+}
+.light-mode .text-rose-300,
+.light-mode .text-rose-200,
+.light-mode .text-rose-400 {
+  color: #9f1239 !important;
+}
+
+.light-mode .bg-sky-950\/80,
+.light-mode .bg-blue-950\/70 {
+  background-color: #e0f2fe !important;
+}
+.light-mode .text-sky-300,
+.light-mode .text-sky-400,
+.light-mode .text-blue-300 {
+  color: #0369a1 !important;
+}
+
+.light-mode .bg-amber-950\/70,
+.light-mode .bg-amber-950\/60 {
+  background-color: #fef3c7 !important;
+}
+.light-mode .text-amber-300,
+.light-mode .text-amber-400 {
+  color: #b45309 !important;
+}
+
+/* Tailwind v3 animate-in fallback */
+@layer utilities {
+  .animate-in {
+    animation: fadeIn 0.3s ease-out both;
+  }
+  .fade-in {
+    animation: fadeIn 0.3s ease-out both;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0);   }
+  }
+}
