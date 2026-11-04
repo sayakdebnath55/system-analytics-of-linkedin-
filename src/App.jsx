@@ -81,7 +81,7 @@ const PROFILES_DATABASE = {
         serialHash: "0xSNU2029904A7F9E2D188C4",
         verified: true,
         isFeaturedServiceNow: true,
-        pdfUrl: "/dhiraj-servicenow-certificate.pdf",
+        pdfUrl: "./dhiraj-servicenow-certificate.pdf",
         documentNote: "certificate (1).pdf",
         modules: [
           "Welcome to ServiceNow",
@@ -193,7 +193,7 @@ const PROFILES_DATABASE = {
         recipient: "SAYAK DEBNATH",
         serialHash: "0xMSFT2026AUG03SAYAK99A1",
         verified: true,
-        pdfUrl: "/sayak-microsoft-certificate.pdf",
+        pdfUrl: "./sayak-microsoft-certificate.pdf",
         documentNote: "certificate.pdf",
         signatories: [
           {
@@ -300,7 +300,7 @@ function resolveCandidateByName(inputName) {
         serialHash: "0xSNU2029904A7F9E2D188C4",
         verified: true,
         isFeaturedServiceNow: true,
-        pdfUrl: "/dhiraj-servicenow-certificate.pdf",
+        pdfUrl: "./dhiraj-servicenow-certificate.pdf",
         modules: PROFILES_DATABASE.dhiraj.certificates[0].modules,
         signatories: PROFILES_DATABASE.dhiraj.certificates[0].signatories,
         verificationNote:
@@ -909,7 +909,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-3.5">
             <img
-              src="/alard-logo.png"
+              src="./alard-logo.png"
               alt="ALARD University"
               className="w-11 h-11 rounded-xl object-contain bg-white p-1 border border-indigo-500/40 shadow"
               onError={(e) => {
